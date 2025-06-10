@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import GlobalStyles from "./styles/GlobalStyle";
 const H1 = styled.h1`
   font-size: 30px;
   font-weight: 600;
@@ -16,10 +17,13 @@ const Button = styled.button`
 `;
 function App() {
   return (
-    <div>
-      <H1>The Wild Oasis</H1>
-      <Button>Click Me</Button>
-    </div>
+    <>
+      <GlobalStyles />
+      <div>
+        <H1>The Wild Oasis</H1>
+        <Button>Click Me</Button>
+      </div>
+    </>
   );
 }
 
